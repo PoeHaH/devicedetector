@@ -8,7 +8,7 @@ It's inspecting the navigator.userAgent string to find out the answer.
 
 ```js
 if(deviceDetector.device == 'desktop')
-  //You're on a phone
+  //You're on a desktop
 else
   //You're on a tablet or phone
   
