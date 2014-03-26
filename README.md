@@ -11,12 +11,12 @@ device.
 
 ## Usage
 
-Include the script, or copy/paste it in your own project.
+Include the script, or copy/paste it in your own project:
 
 ```html
 <script type="text/javascript" src="https://raw.githubusercontent.com/PoeHaH/devicedetector/master/devicedetector-min.js"/>
 ```
-You're now ready to access the object.
+You're now ready to access the object:
 
 
 ```js
@@ -34,5 +34,6 @@ else
 + `deviceDetector.userAgent` contains the user agent string the check is performed against.
 
 ## Functions
-+ `deviceDetector.detect()` allows you to redetect. (if needed).
+
++ `deviceDetector.detect(userAgent)` allows you to detect based on a given user agent string. If the argument is not supplied, navigator.userAgent is used.
 
