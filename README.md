@@ -43,6 +43,11 @@ else
 In the tests folder, you can find .txt files with 300 random user agent strings per device.
 This can be used to test with the supplied index.html.
 
+The strings for the txt files are coming from:
+http://www.mobile247.eu/online-tools/user-agent-strings/dv/device3/smartphone
+http://www.mobile247.eu/online-tools/user-agent-strings/dv/device1/desktop
+http://www.mobile247.eu/online-tools/user-agent-strings/dv/device2/tablet
+
 ###results
 
 Phones & desktops are discoverred without issue. Tablets are detected correctly for 98%.
