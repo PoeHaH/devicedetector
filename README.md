@@ -37,3 +37,12 @@ else
 
 + `deviceDetector.detect(userAgent)` allows you to detect based on a given user agent string. If the argument is not supplied, navigator.userAgent is used.
 
+
+##Tests
+
+In the tests folder, you can find .txt files with 300 random user agent strings per device.
+This can be used to test with the supplied index.html.
+
+###results
+
+Phones & desktops are discoverred without issue. Tablets are detected correctly for 98%.
