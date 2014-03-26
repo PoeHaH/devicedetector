@@ -1,0 +1,47 @@
+<script>
+var deviceDetector = (function ()
+{
+	var ua = navigator.userAgent.toLowerCase();
+    var detect = (function(s)
+    {
+		if(s===undefined)s=ua;
+		else ua = s.toLowerCase();
+		if(/(ipad|tablet|(android(?!.*mobile))|(windows(?!.*phone)(.*touch))|kindle|playbook|silk|(puffin(?!.*(IP|AP|WP))))/.test(ua))
+            return 'tablet';
+        else
+			if(/(mobi|ipod|phone|blackberry|opera mini|fennec|minimo|symbian|psp|nintendo ds|archos|skyfire|puffin|s40Ovibrowser|blazer|bolt|gobrowser|iris|maemo|semc|teashark|uzard )/.test(ua))            
+                return 'phone';
+            else return 'desktop';
+    });
+    return{
+        device:detect(),
+        detect:detect,
+        isMobile:((detect()!='desktop')?true:false),
+        userAgent:ua
+    };
+}());
+
+function test()
+{
+	var type = document.getElementById('type').options[document.getElementById('type').selectedIndex].value;
+	var t = document.getElementById('txt').value;
+	var z = t.split("\n");
+	var succes=0;
+	var fail = 0;
+	for(i=0;i<z.length;i++)
+	{
+		var s = '<span style="color:black;">';
+		if(deviceDetector.detect(z[i].toLowerCase())==type)succes++;else{fail++;s = '<span style="color:red;">';}
+		document.write(s+deviceDetector.detect(z[i].toLowerCase())+' -> '+z[i]+'</span><br/>');
+	}
+	document.write('Total: '+z.length+' OK: '+succes+' NOK: '+fail);
+}
+</script>
+<select id="type">
+<option value="desktop">Desktop</option>
+<option value="phone">Phone</option>
+<option value="tablet">Tablet</option>
+</select><br/>
+<textarea id="txt" style="width:300px;height:300px;">
+</textarea>
+<input type="submit" onclick="test();"/>
