@@ -1,11 +1,11 @@
-Device detector
+Device detector (client-side device detecting)
 ================
 
 A simple JavaScript object to detect if you are running on a desktop, tablet or mobile device.
 It inspects the navigator.userAgent string to find out which device you are using.
 
-There are numorous scripts out there that do the same though I've always found
-they are somewhat incomplete. None of them took into account the emerging fennect (firefox OS)
+There are numorous scripts out there that do the same, though I've always found
+they are somewhat incomplete. For example, none of them took into account the emerging fennect (firefox OS)
 device.
 
 
