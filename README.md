@@ -16,8 +16,22 @@ Include the script, or copy/paste it in your own project:
 ```html
 <script type="text/javascript" src="https://raw.githubusercontent.com/PoeHaH/devicedetector/master/devicedetector-min.js"/>
 ```
-You're now ready to access the object:
+Make sure the script is fully loaded before accessing the object. This can be done by wrapping everything in jQuery's document.ready() or native javascript.
 
+jQuery:
+```js
+$(document).ready(function(){
+  // Access device detector here.
+});
+```
+Native javascript:
+```js
+document.addEventListener("DOMContentLoaded", function(event) { 
+  // Access device detector here.
+});
+```
+
+Now, you're ready to access to deviceDetector:
 
 ```js
 $(document).ready(function(){
