@@ -20,14 +20,16 @@ You're now ready to access the object:
 
 
 ```js
-if(deviceDetector.device == 'desktop')
-  // You're on a desktop.
-else{
-  if(deviceDetector.device == 'tablet')
-    // You're on a tablet.
-  else
-    // You're on a phone.
-}
+$(document).ready(function(){
+  if(deviceDetector.device == 'desktop')
+    // You're on a desktop.
+  else{
+    if(deviceDetector.device == 'tablet')
+      // You're on a tablet.
+    else
+      // You're on a phone.
+  }
+});
 ```
 
 
