@@ -57,6 +57,9 @@ $(document).ready(function(){
 
 + `deviceDetector.detect(userAgent)` allows you to detect based on a given user agent string. If the argument is not supplied, navigator.userAgent is used.
 
+## Dependencies
+
+None :)
 
 ##Tests
 
