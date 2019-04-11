@@ -71,6 +71,6 @@ The strings for the txt files are coming from:
 + http://www.mobile247.eu/online-tools/user-agent-strings/dv/device1/desktop
 + http://www.mobile247.eu/online-tools/user-agent-strings/dv/device2/tablet
 
-### Results
+## Results
 
 Phones & desktops are discoverred without issue. Tablets are detected correctly for 98%.
